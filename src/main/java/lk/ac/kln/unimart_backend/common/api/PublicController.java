@@ -18,4 +18,8 @@ public class PublicController {
                 "time", Instant.now()
         );
     }
+    @GetMapping("/version")
+    public Map<String, String> version() {
+        return Map.of("version", "0.1.0");
+    }
 }
